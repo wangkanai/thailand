@@ -6,6 +6,7 @@
 .idea/
 
 # User-specific files
+*.sln
 *.rsuser
 *.suo
 *.user
@@ -400,3 +401,4 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
