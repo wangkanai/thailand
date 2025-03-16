@@ -1,7 +1,3 @@
----
-title: Identity
-date: 2025-02-16
----
 # Thailand Identity
 
 - [เลขประจำตัวประชาชน](identity-number.md#เลขประจำตัวประชาชน-13-หลัก)

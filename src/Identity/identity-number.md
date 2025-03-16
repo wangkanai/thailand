@@ -1,7 +1,3 @@
----
-title: Identity Number
-date: 2025-02-16
----
 # Identity Number
 
 ## เลขประจำตัวประชาชน 13 หลัก
