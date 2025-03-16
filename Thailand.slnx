@@ -7,4 +7,8 @@
     <File Path=".editorconfig" />
     <File Path=".gitignore" />
   </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests\unit\Wangkanai.Thailand.UnitTests.csproj" Type="Classic C#" />
+  </Folder>
+  <Project Path="src\Wangkanai.Thailand.csproj" Type="Classic C#" />
 </Solution>
