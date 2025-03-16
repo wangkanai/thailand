@@ -1,8 +1,8 @@
 namespace Wangkanai.Thailand.Identity.Identifier;
 
-public static class NationIdValidation
+public static class IdentifierValidator
 {
-    public static bool Validate(this NationId number)
+    public static bool Validate(this IdentifierNumber number)
     {
         throw new NotImplementedException();
     }
