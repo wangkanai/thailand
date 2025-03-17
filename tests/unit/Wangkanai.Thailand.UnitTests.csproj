@@ -1,25 +1,26 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-    <PropertyGroup>
-        <TargetFramework>net9.0</TargetFramework>
-        <ImplicitUsings>enable</ImplicitUsings>
-        <Nullable>enable</Nullable>
-        <IsPackable>false</IsPackable>
-    </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net9.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<IsPackable>false</IsPackable>
+		<RootNamespace>Wangkanai.Thailand</RootNamespace>
+	</PropertyGroup>
 
-    <ItemGroup>
-        <PackageReference Include="Microsoft.NET.Test.Sdk"/>
-        <PackageReference Include="xunit"/>
-        <PackageReference Include="xunit.runner.visualstudio"/>
-        <PackageReference Include="coverlet.collector"/>
-    </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.NET.Test.Sdk" />
+		<PackageReference Include="xunit" />
+		<PackageReference Include="xunit.runner.visualstudio" />
+		<PackageReference Include="coverlet.collector" />
+	</ItemGroup>
 
-    <ItemGroup>
-        <Using Include="Xunit"/>
-    </ItemGroup>
+	<ItemGroup>
+		<Using Include="Xunit" />
+	</ItemGroup>
 
-    <ItemGroup>
-        <ProjectReference Include="..\..\src\Wangkanai.Thailand.csproj"/>
-    </ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\..\src\Wangkanai.Thailand.csproj" />
+	</ItemGroup>
 
 </Project>
