@@ -20,12 +20,13 @@ public sealed class IdentityNumber
 			digits[i] = span[i] - '0';
 
 		var sum = 0;
-		for (var i = 0; i < 13; i++)
-			sum += digits[i] * (i + 1);
+		for (var i = 0; i < 12; i++)
+			sum += digits[i] * (13 - i);
 
 		var mod        = sum % 11;
 		var checkDigit = mod <= 1 ? 1 - mod : 11 - mod;
+		var lastDigit  = digits[12];
 
-		return digits[12] == checkDigit;
+		return lastDigit == checkDigit;
 	}
 }
