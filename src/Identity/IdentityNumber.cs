@@ -3,14 +3,15 @@ namespace Wangkanai.Thailand.Identity;
 public sealed class IdentityNumber
 {
 	public ulong Number { get; private set; }
-	public bool  IsValid  { get; private set; }
 
 	public IdentityNumber() { }
 	public IdentityNumber(ulong number) => Number = number;
 
+	public bool IsValid => Validate(Number);
+
 	public static bool Validate(ulong number)
 	{
-		if(number is > 9_999_999_999_999 or < 0_200_000_000_000)
+		if (number is > 9_999_999_999_999 or < 0_200_000_000_000)
 			return false;
 
 		var digits = new int[13];
