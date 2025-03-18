@@ -13,7 +13,7 @@ public sealed class IdentityNumber
 
 	public bool IsValid   => Validate(Number);
 	public bool IsPerson  => Number is >= 1_000_000_000_000 and <=10_000_000_000_000;
-	public bool IsCompany => Number is >= 0_200_000_000_000 and < 10_000_000_000_000;
+	public bool IsCompany => Number is >= 0_200_000_000_000 and < 1_000_000_000_000;
 
 	public static bool Validate(ulong number)
 	{
