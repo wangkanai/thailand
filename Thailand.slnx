@@ -6,6 +6,7 @@
     <File Path="README.md" />
     <File Path=".editorconfig" />
     <File Path=".gitignore" />
+    <File Path="LICENSE" />
   </Folder>
   <Folder Name="/tests/">
     <Project Path="tests\unit\Wangkanai.Thailand.UnitTests.csproj" Type="Classic C#" />
