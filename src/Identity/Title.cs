@@ -2,15 +2,18 @@
 
 namespace Wangkanai.Thailand.Identity;
 
-public sealed class Title : Rank
+public sealed record Title
 {
+	public string Name    { get; }
+	public string Thai    { get; }
+	public string English { get; }
+
 	public Title() { }
 
-	public Title(string titleThai, string titleEnglish, string abbreviationThai, string abbreviationEnglish)
+	public Title(string name, string thai, string english)
 	{
-		TitleThai           = titleThai;
-		TitleEnglish        = titleEnglish;
-		AbbreviationThai    = abbreviationThai;
-		AbbreviationEnglish = abbreviationEnglish;
+		Name    = name;
+		Thai    = thai;
+		English = english;
 	}
 }

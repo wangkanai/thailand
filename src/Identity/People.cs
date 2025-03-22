@@ -4,12 +4,12 @@ namespace Wangkanai.Thailand.Identity;
 
 public class People
 {
-	public static List<Title> Titles { get; set; } =
+	public static List<Title> Titles =>
 	[
-		new("นาย", "Mister", "นาย", "Mr."),
-		new("นาง", "Mistress.", "นาง", "Mrs."),
-		new("นางสาว", "Miss", "น.ส.", "Ms."),
-		new("เด็กชาย", "Master", "ด.ช.", "Master"),
-		new("เด็กหญิง", "Miss", "ด.ญ.", "Miss"),
+		new("นาย", "นาย", "Mr."),
+		new("นาง", "นาง", "Mrs."),
+		new("นางสาว", "น.ส.", "Ms."),
+		new("เด็กชาย", "ด.ช.", "Master"),
+		new("เด็กหญิง", "ด.ญ.", "Miss"),
 	];
 }
