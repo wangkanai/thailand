@@ -4,18 +4,8 @@ namespace Wangkanai.Thailand.Identity;
 
 public abstract class Rank
 {
-	public Rank() { }
-
-	public Rank(string titleThai, string titleEnglish, string abbreviationThai, string abbreviationEnglish)
-	{
-		TitleThai           = titleThai;
-		TitleEnglish        = titleEnglish;
-		AbbreviationThai    = abbreviationThai;
-		AbbreviationEnglish = abbreviationEnglish;
-	}
-
-	public string TitleThai           { get; set; }
-	public string TitleEnglish        { get; set; }
-	public string AbbreviationThai    { get; set; }
-	public string AbbreviationEnglish { get; set; }
+	public string TitleThai           { get; protected set; }
+	public string TitleEnglish        { get; protected set; }
+	public string AbbreviationThai    { get; protected set; }
+	public string AbbreviationEnglish { get; protected set; }
 }
