@@ -1,14 +1,15 @@
 <Project>
-	<PropertyGroup>
-		<!-- Enable central package management, https://learn.microsoft.com/en-us/nuget/consume-packages/Central-Package-Management -->
-		<ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
-	</PropertyGroup>
-	<ItemGroup>
-		<PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.12.0" />
-		<PackageVersion Include="xunit" Version="2.9.2" />
-		<PackageVersion Include="xunit.runner.visualstudio" Version="2.8.2" />
-		<PackageVersion Include="coverlet.collector" Version="6.0.2" />
-		<!--wangkanai-->
-		<PackageVersion Include="Wangkanai.System" Version="5.0.0" />
-	</ItemGroup>
+  <PropertyGroup>
+    <!-- Enable central package management, https://learn.microsoft.com/en-us/nuget/consume-packages/Central-Package-Management -->
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.12.0" />
+    <PackageVersion Include="Wangkanai.Domain" Version="4.4.0" />
+    <PackageVersion Include="xunit" Version="2.9.2" />
+    <PackageVersion Include="xunit.runner.visualstudio" Version="2.8.2" />
+    <PackageVersion Include="coverlet.collector" Version="6.0.2" />
+    <!--wangkanai-->
+    <PackageVersion Include="Wangkanai.System" Version="5.0.0" />
+  </ItemGroup>
 </Project>
