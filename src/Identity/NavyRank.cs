@@ -6,11 +6,11 @@ public sealed class NavyRank : Rank
 {
 	public NavyRank() { }
 
-	public NavyRank(string titleThai, string titleEnglish, string abbreviationThai, string abbreviationEnglish)
+	public NavyRank(string titleThai, string titleEnglish, string acronymThai, string acronymEnglish)
 	{
 		TitleThai           = titleThai;
 		TitleEnglish        = titleEnglish;
-		AbbreviationThai    = abbreviationThai;
-		AbbreviationEnglish = abbreviationEnglish;
+		AcronymThai    = acronymThai;
+		AcronymEnglish = acronymEnglish;
 	}
 }

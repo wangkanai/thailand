@@ -1,5 +1,7 @@
 <Project>
 	<PropertyGroup>
+		<Version>0.0.0</Version>
+
 		<Company>Wangkanai</Company>
 		<Authors>Sarin Na Wangkanai</Authors>
 		<Copyright>©2014-2025 Sarin Na Wangkanai, All rights reserved</Copyright>
