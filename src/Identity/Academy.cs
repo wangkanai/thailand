@@ -21,7 +21,6 @@ public static class Academy
 		new("มัธยมปลาย", "High School", "ม.ปล.", "H.S."),
 		new("ประกาศนียบัตรวิชาชีพ", "Vocational Certificate", "ปวช.", "Voc.Cert."),
 		new("ประกาศนียบัตรวิชาชีพชั้นสูง", "Vocational Diploma", "ปวส.", "Voc.Dip."),
-		new("อนุปริญญา", "Associate Degree", "อนุปริญญา", "A.D."),
 		new("ปริญญาตรี", "Bachelor of Science", "วิทยาศาสตรบัณฑิต", "B.Sc."),
 		new("ปริญญาโท", "Master of Science", "มหาบัณฑิต", "M.Sc."),
 		new("ปริญญาเอก", "Doctor of Philosophy", "ดุษฎีบัณฑิต", "Ph.D."),
