@@ -1,6 +1,6 @@
 <Project>
 	<PropertyGroup>
-		<Version>0.0.0</Version>
+		<Version>0.0.1</Version>
 
 		<Title>Wangkanai Thailand</Title>
 		<Description>Wangkanai Thailand localization information database</Description>
@@ -22,14 +22,14 @@
 		<Nullable>enable</Nullable>
 	</PropertyGroup>
 
-	<PropertyGroup Condition="'$(MSBuildProjectName)' == 'Wangkanai.Ledger'">
+	<PropertyGroup Condition="'$(MSBuildProjectName)' == 'Wangkanai.Thailand'">
 		<PackageIcon>wangkanai-logo.png</PackageIcon>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 	</PropertyGroup>
 
-	<ItemGroup Condition="'$(MSBuildProjectName)' == 'Wangkanai.Ledger'">
-		<None Include="..\..\assets\wangkanai-logo.png" Pack="true" PackagePath="\" />
-		<None Include="..\..\README.md" Pack="true" PackagePath="\" />
+	<ItemGroup Condition="'$(MSBuildProjectName)' == 'Wangkanai.Thailand'">
+		<None Include="..\assets\wangkanai-logo.png" Pack="true" PackagePath="\" />
+		<None Include="..\README.md" Pack="true" PackagePath="\" />
 	</ItemGroup>
 
 	<PropertyGroup>
