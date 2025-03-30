@@ -1,7 +1,9 @@
 <Project>
 	<PropertyGroup>
-		<Version>0.0.0</Version>
+		<Version>0.0.1</Version>
 
+		<Title>Wangkanai Thailand</Title>
+		<Description>Wangkanai Thailand localization information database</Description>
 		<Company>Wangkanai</Company>
 		<Authors>Sarin Na Wangkanai</Authors>
 		<Copyright>©2014-2025 Sarin Na Wangkanai, All rights reserved</Copyright>
@@ -13,9 +15,29 @@
 		<PackageLicense>https://github.com/wangkanai/thailand/blob/main/LICENSE</PackageLicense>
 		<PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
 	</PropertyGroup>
+
 	<PropertyGroup>
 		<TargetFramework>net9.0</TargetFramework>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(MSBuildProjectName)' == 'Wangkanai.Thailand'">
+		<PackageIcon>wangkanai-logo.png</PackageIcon>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+	</PropertyGroup>
+
+	<ItemGroup Condition="'$(MSBuildProjectName)' == 'Wangkanai.Thailand'">
+		<None Include="..\assets\wangkanai-logo.png" Pack="true" PackagePath="\" />
+		<None Include="..\README.md" Pack="true" PackagePath="\" />
+	</ItemGroup>
+
+	<PropertyGroup>
+		<SuppressNETCoreSdkPreviewMessage>true</SuppressNETCoreSdkPreviewMessage>
+		<PublishRepositoryUrl>true</PublishRepositoryUrl>
+		<EmbedUntrackedSources>true</EmbedUntrackedSources>
+		<IncludeSymbols>true</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+		<AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
 	</PropertyGroup>
 </Project>
