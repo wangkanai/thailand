@@ -3,4 +3,10 @@
 		<PackageReference Include="Wangkanai.Domain" />
 		<PackageReference Include="Wangkanai.System" />
 	</ItemGroup>
+	<ItemGroup>
+	  <PackageVersion Update="Microsoft.SourceLink.GitHub" Version="8.0.0">
+	    <PrivateAssets>all</PrivateAssets>
+	    <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	  </PackageVersion>
+	</ItemGroup>
 </Project>
