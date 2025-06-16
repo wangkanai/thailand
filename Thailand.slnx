@@ -1,4 +1,7 @@
 <Solution>
+  <Folder Name="/.github/">
+    <File Path=".github\workflows\dotnet.yml" />
+  </Folder>
   <Folder Name="/.solutions/">
     <File Path="Directory.Build.props" />
     <File Path="Directory.Build.targets" />
@@ -10,6 +13,7 @@
     <File Path="build.ps1" />
     <File Path="sign.ps1" />
     <File Path="version.ps1" />
+    <File Path="SonarQube.Analysis.xml" />
   </Folder>
   <Folder Name="/tests/">
     <Project Path="tests\unit\Wangkanai.Thailand.UnitTests.csproj" Type="Classic C#" />
