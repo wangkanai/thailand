@@ -1,8 +1,8 @@
 param(
-    [Parameter(mandatory = $false)]
-    [bool]$dryrun = $false,
-    [Parameter(mandatory = $false)]
-    [string]$certicate = "Open Source Developer, Sarin Na Wangkanai"
+    [Parameter(mandatory=$false)]
+    [bool]$publish=$false,
+    [Parameter(mandatory=$false)]
+    [string]$name="Open Source Developer, Sarin Na Wangkanai"
 )
 
 Write-Host "NuGet Certificate: $certicate"  -ForegroundColor Magenta
@@ -23,11 +23,12 @@ Get-ChildItem  .\src\ -Recurse Wangkanai.*.dll | where { $_.Directory -like "*Re
 
 dotnet pack -c Release -tl -o .\artifacts --include-symbols -p:SymbolPackageFormat=snupkg
 
-dotnet nuget sign .\artifacts\*.nupkg  -v normal --timestamper http://timestamp.digicert.com --certificate-subject-name $certicate -o .\signed
-dotnet nuget sign .\artifacts\*.snupkg -v normal --timestamper http://timestamp.digicert.com --certificate-subject-name $certicate -o .\signed
+dotnet nuget sign .\artifacts\*.nupkg  -v normal --timestamper http://timestamp.digicert.com --certificate-subject-name $name -o .\signed
+dotnet nuget sign .\artifacts\*.snupkg -v normal --timestamper http://timestamp.digicert.com --certificate-subject-name $name -o .\signed
 
-if ($dryrun) {
-    Write-Host "Dryrun: Cryptography" -ForegroundColor Yellow;
+if (!$publish)
+{
+    write-host "Skip update: System" -ForegroundColor Yellow;
     exit;
 }
 
